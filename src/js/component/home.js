@@ -6,10 +6,10 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 export function Home() {
 	return (
-		<div className="traffic-lights shape">
-			<Circle classContent="light red" />
-			<Circle classContent="light amber" />
-			<Circle classContent="light green" />
+		<div className="traffic-lights">
+			<Circle classContent="red" />
+			<Circle classContent="amber" />
+			<Circle classContent="green" />
 		</div>
 	);
 }

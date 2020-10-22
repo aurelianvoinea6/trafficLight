@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 body {
-  background: #FE6860;
+    background: cornflowerblue;
 }
 
 .traffic-lights {
@@ -19,18 +19,56 @@ body {
 
 .light {
   border-radius: 50%;
-  background: teal;
+  background: gray;
   width: 100px;
   height: 100px;
   margin: 20px auto;
 }
 
 .red {
+      border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
     background-color: red;
 }
 .amber{
-    background-color:yellow;
+      border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
+    background-color:orange;
 }
 .green{
+      border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
+    background-color: green;
+}
+// .red:focus{
+// -webkit-box-shadow: 0px 0px 79px 10px rgba(255,208,0,1);
+// -moz-box-shadow: 0px 0px 79px 10px rgba(255,208,0,1);
+// box-shadow: 0px 0px 79px 10px rgba(255,208,0,1);
+// }
+.ball:nth-child(1){
+    border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
+    background-color: red;
+}
+.ball:nth-child(2){
+    border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
+    background-color: orange;
+}
+.ball:nth-child(3){
+    border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
     background-color: green;
 }
