@@ -1,74 +1,68 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 body {
-    background: cornflowerblue;
+    background-image: url("https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .traffic-lights {
-  padding: 10px 50px;
+  padding: 0.625rem 3.125rem;
   background: #222;
-  border-radius: 35px;
-  border: 15px solid #111;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
+  border-radius: 2.188rem;
+  border: 0.938rem solid #111;
+  width: 14.50rem;
+  margin-left: 20%;
   z-index:100;
 }
 
-.light {
+.lightOff {
   border-radius: 50%;
   background: gray;
-  width: 100px;
-  height: 100px;
-  margin: 20px auto;
+  width: 6.25rem;
+  height: 6.25rem;
+  margin: 1.25rem auto;
 }
 
 .red {
-      border-radius: 50%;
-    width: 100px;
-  height: 100px;
-  margin: 20px auto;
+    border-radius: 50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 1.25rem auto;
     background-color: red;
+    -webkit-box-shadow: 0px 0px 5rem 0.625rem rgb(219, 17, 17);
+    -moz-box-shadow: 0px 0px 5rem 0.625rem rgb(219, 17, 17);
+    box-shadow: 0px 0px 5rem 0.625rem rgb(219, 17, 17);
 }
-.amber{
-      border-radius: 50%;
-    width: 100px;
-  height: 100px;
-  margin: 20px auto;
+.orange{
+    border-radius: 50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 1.25rem auto;
     background-color:orange;
+    -webkit-box-shadow: 0px 0px 5rem 0.625rem rgb(255, 187, 0);
+    -moz-box-shadow: 0px 0px 5rem 0.625rem rgb(255, 187, 0);
+    box-shadow: 0px 0px 5rem 0.625rem rgb(255, 187, 0);    
 }
 .green{
-      border-radius: 50%;
-    width: 100px;
-  height: 100px;
-  margin: 20px auto;
+    border-radius: 50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 1.25rem auto;
     background-color: green;
+    -webkit-box-shadow: 0px 0px 5rem 0.625rem rgb(17, 219, 44);
+    -moz-box-shadow: 0px 0px 5rem 0.625rem rgb(17, 219, 44);
+    box-shadow: 0px 0px 5rem 0.625rem rgb(17, 219, 44);
 }
-// .red:focus{
-// -webkit-box-shadow: 0px 0px 79px 10px rgba(255,208,0,1);
-// -moz-box-shadow: 0px 0px 79px 10px rgba(255,208,0,1);
-// box-shadow: 0px 0px 79px 10px rgba(255,208,0,1);
-// }
-.ball:nth-child(1){
-    border-radius: 50%;
-    width: 100px;
-  height: 100px;
-  margin: 20px auto;
-    background-color: red;
-}
-.ball:nth-child(2){
-    border-radius: 50%;
-    width: 100px;
-  height: 100px;
-  margin: 20px auto;
-    background-color: orange;
-}
-.ball:nth-child(3){
-    border-radius: 50%;
-    width: 100px;
-  height: 100px;
-  margin: 20px auto;
-    background-color: green;
+.text{
+    margin-top: 6%;
+    margin-left: 16%;
+    padding: 1% 3%;
+    width: fit-content;
+    background: rgba(94, 93, 93, 0.603);
+    border-radius: 1rem;
+    font-family: 'Staatliches', cursive;
+    color: white;
 }

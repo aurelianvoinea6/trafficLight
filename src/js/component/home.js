@@ -1,15 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { Circle } from "./circle.jsx";
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
 export function Home() {
+	const [redLight, setRedLight] = useState("");
+	const [orangeLight, setOrangeLight] = useState("");
+	const [greenLight, setGreenLight] = useState("");
+
 	return (
-		<div className="traffic-lights">
-			<Circle classContent="red" />
-			<Circle classContent="amber" />
-			<Circle classContent="green" />
+		<div>
+			<h1 className="text">Click on the lights!</h1>
+			<div className="traffic-lights">
+				<Circle
+					classContent={"lightOff " + redLight}
+					eventContent={() => {
+						if (redLight == "") {
+							setRedLight("red");
+							setOrangeLight("");
+							setGreenLight("");
+						}
+					}}
+				/>
+				<Circle
+					classContent={"lightOff " + orangeLight}
+					eventContent={() => {
+						if (orangeLight == "") {
+							setRedLight("");
+							setOrangeLight("orange");
+							setGreenLight("");
+						}
+					}}
+				/>
+				<Circle
+					classContent={"lightOff " + greenLight}
+					eventContent={() => {
+						if (greenLight == "") {
+							setRedLight("");
+							setOrangeLight("");
+							setGreenLight("green");
+						}
+					}}
+				/>
+			</div>
 		</div>
 	);
 }
